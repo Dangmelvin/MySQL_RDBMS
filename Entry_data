@@ -1,0 +1,68 @@
+-- Insert data into Admins table
+INSERT INTO Admins (Username, Password, Name, Email, Phone) VALUES
+('admin1', 'password1', 'Alice Johnson', 'alice.johnson@example.com', '1234567890'),
+('admin2', 'password2', 'Bob Smith', 'bob.smith@example.com', '0987654321');
+
+-- Insert data into Teachers table
+INSERT INTO Teachers (Username, Password, Name, Email, Phone) VALUES
+('teacher1', 'password1', 'Emma Brown', 'emma.brown@example.com', '1234567890'),
+('teacher2', 'password2', 'Liam Wilson', 'liam.wilson@example.com', '1234567891'),
+('teacher3', 'password3', 'Olivia Davis', 'olivia.davis@example.com', '1234567892'),
+('teacher4', 'password4', 'Noah Miller', 'noah.miller@example.com', '1234567893'),
+('teacher5', 'password5', 'Ava Martinez', 'ava.martinez@example.com', '1234567894'),
+('teacher6', 'password6', 'Elijah Anderson', 'elijah.anderson@example.com', '1234567895'),
+('teacher7', 'password7', 'Isabella Thomas', 'isabella.thomas@example.com', '1234567896');
+
+-- Insert data into Students table
+INSERT INTO Students (Username, Password, Name, Email, Phone) VALUES
+('student1', 'password1', 'Michael Scott', 'michael.scott@example.com', '2234567890'),
+('student2', 'password2', 'Dwight Schrute', 'dwight.schrute@example.com', '2234567891'),
+('student3', 'password3', 'Jim Halpert', 'jim.halpert@example.com', '2234567892'),
+('student4', 'password4', 'Pam Beesly', 'pam.beesly@example.com', '2234567893'),
+('student5', 'password5', 'Angela Martin', 'angela.martin@example.com', '2234567894'),
+('student6', 'password6', 'Kevin Malone', 'kevin.malone@example.com', '2234567895'),
+('student7', 'password7', 'Stanley Hudson', 'stanley.hudson@example.com', '2234567896'),
+('student8', 'password8', 'Phyllis Vance', 'phyllis.vance@example.com', '2234567897'),
+('student9', 'password9', 'Oscar Martinez', 'oscar.martinez@example.com', '2234567898'),
+('student10', 'password10', 'Ryan Howard', 'ryan.howard@example.com', '2234567899'),
+('student11', 'password11', 'Kelly Kapoor', 'kelly.kapoor@example.com', '3234567890'),
+('student12', 'password12', 'Toby Flenderson', 'toby.flenderson@example.com', '3234567891'),
+('student13', 'password13', 'Creed Bratton', 'creed.bratton@example.com', '3234567892'),
+('student14', 'password14', 'Meredith Palmer', 'meredith.palmer@example.com', '3234567893'),
+('student15', 'password15', 'Darryl Philbin', 'darryl.philbin@example.com', '3234567894'),
+('student16', 'password16', 'Erin Hannon', 'erin.hannon@example.com', '3234567895'),
+('student17', 'password17', 'Jan Levinson', 'jan.levinson@example.com', '3234567896'),
+('student18', 'password18', 'Holly Flax', 'holly.flax@example.com', '3234567897'),
+('student19', 'password19', 'David Wallace', 'david.wallace@example.com', '3234567898'),
+('student20', 'password20', 'Charles Miner', 'charles.miner@example.com', '3234567899');
+
+-- Insert data into Semesters table
+INSERT INTO Semesters (StartDate, EndDate) VALUES
+('2023-01-01', '2023-06-01'),
+('2023-07-01', '2023-12-01');
+
+-- Insert data into Courses table
+INSERT INTO Courses (CourseCode, Title, Description, SemesterID, AdminID, TeacherID) VALUES
+('CSCI101', 'Introduction to Computer Science', 'Introduction to computer science concepts and programming.', 1, 1, 1),
+('MATH201', 'Calculus I', 'Fundamental concepts of calculus including limits, derivatives, and integrals.', 1, 1, 2),
+('ENG101', 'English Composition', 'Developing effective writing skills for academic and professional purposes.', 1, 1, 3),
+('PHYS202', 'Physics II', 'Continuation of introductory physics, covering electromagnetism and optics.', 1, 1, 4),
+('CHEM101', 'General Chemistry', 'Introduction to basic principles of chemistry and chemical reactions.', 1, 1, 5),
+('HIST101', 'World History', 'Survey of major events and developments in world history.', 2, 2, 6),
+('ECON301', 'Macroeconomics', 'Study of economic principles at the national level, including GDP and fiscal policy.', 2, 2, 7),
+('PSYCH101', 'Introduction to Psychology', 'Overview of psychological theories and concepts.', 2, 2, 1),
+('ART202', 'Art History', 'Survey of major artistic movements and styles throughout history.', 2, 2, 2),
+('BIOL101', 'Biology I', 'Fundamental concepts of biology including cellular structure and genetics.', 2, 2, 3);
+
+-- Insert data into CourseTeachers table
+INSERT INTO CourseTeachers (CourseID, TeacherID) VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5),
+(6, 6),
+(7, 7),
+(8, 1),
+(9, 2),
+(10, 3);
