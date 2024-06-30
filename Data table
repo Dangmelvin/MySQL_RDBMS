@@ -1,0 +1,91 @@
+Admins Table						
+AdminID (PK)	Username	Password	Name	Email	Phone	
+1	admin1	hashedpassword1	Admin One	admin1@example.com	123-456-7890	
+2	admin2	hashedpassword2	Admin Two	admin2@example.com	098-765-4321	
+						
+Teacher Table						
+TeacherID (PK)	Username	Password	Name	Email	Phone	
+1	teacher1	hashedpassword1	Alice Johnson	alice.johnson@example.com	111-111-1111	
+2	teacher2	hashedpassword2	Bob Smith	bob.smith@example.com	222-222-2222	
+3	teacher3	hashedpassword3	Charlie Brown	charlie.brown@example.com	333-333-3333	
+4	teacher4	hashedpassword4	David Wilson	david.wilson@example.com	444-444-4444	
+5	teacher5	hashedpassword5	Eva Green	eva.green@example.com	555-555-5555	
+6	teacher6	hashedpassword6	Frank Black	frank.black@example.com	666-666-6666	
+7	teacher7	hashedpassword7	Grace White	grace.white@example.com	777-777-7777	
+						
+Student Table						
+StudentID (PK)	Username	Password	Name	Email	Phone	
+1	student1	hashedpassword1	John Doe	john.doe@example.com	100-100-1000	
+2	student2	hashedpassword2	Jane Roe	jane.roe@example.com	200-200-2000	
+3	student3	hashedpassword3	Richard Roe	richard.roe@example.com	300-300-3000	
+4	student4	hashedpassword4	Mary Major	mary.major@example.com	400-400-4000	
+5	student5	hashedpassword5	James Smith	james.smith@example.com	500-500-5000	
+6	student6	hashedpassword6	Emily Jones	emily.jones@example.com	600-600-6000	
+7	student7	hashedpassword7	Michael Brown	michael.brown@example.com	700-700-7000	
+8	student8	hashedpassword8	Sarah Davis	sarah.davis@example.com	800-800-8000	
+9	student9	hashedpassword9	David Martinez	david.martinez@example.com	900-900-9000	
+10	student10	hashedpassword10	Laura Garcia	laura.garcia@example.com	101-101-1010	
+11	student11	hashedpassword11	Daniel Clark	daniel.clark@example.com	202-202-2020	
+12	student12	hashedpassword12	Jessica Lewis	jessica.lewis@example.com	303-303-3030	
+13	student13	hashedpassword13	Brian Walker	brian.walker@example.com	404-404-4040	
+14	student14	hashedpassword14	Amy Hall	amy.hall@example.com	505-505-5050	
+15	student15	hashedpassword15	Ryan Allen	ryan.allen@example.com	606-606-6060	
+16	student16	hashedpassword16	Megan Young	megan.young@example.com	707-707-7070	
+17	student17	hashedpassword17	Joshua Hernandez	joshua.hernandez@example.com	808-808-8080	
+18	student18	hashedpassword18	Rachel King	rachel.king@example.com	909-909-9090	
+19	student19	hashedpassword19	Andrew Wright	andrew.wright@example.com	101-010-1010	
+20	student20	hashedpassword20	Olivia Lopez	olivia.lopez@example.com	202-020-2020	
+						
+Senmesters Table						
+SemesterID (PK)	StartDate	EndDate				
+1	1/1/2023	6/1/2023				
+2	8/1/2023	12/31/2023				
+						
+Course Table						
+CourseID (PK)	CourseCode	Title	Description	SemesterID (FK)	AdminID (FK)	TeacherID
+1	CS101	Introduction to Computer Science	Basic concepts of computer science	1	1	1
+2	CS102	Data Structures	Introduction to data structures	1	2	2
+3	CS103	Algorithms	Introduction to algorithms	1	1	3
+4	CS104	Computer Networks	Basics of computer networks	1	2	4
+5	CS105	Operating Systems	Introduction to operating systems	1	1	5
+6	CS106	Databases	Introduction to databases	2	2	6
+7	CS107	Software Engineering	Introduction to software engineering	2	1	7
+8	CS108	Artificial Intelligence	Basics of AI	2	2	1
+9	CS109	Machine Learning	Introduction to machine learning	2	1	2
+10	CS110	Computer Graphics	Basics of computer graphics	2	2	3
+						
+Course Teacher Table						
+CourseID	TeacherID					
+1	1					
+2	2					
+3	3					
+4	4					
+5	5					
+6	6					
+7	7					
+8	1					
+9	2					
+10	3					
+						
+Enrollment Table						
+EnrollmentID	StudentID	CourseID	SemesterID	Grade		
+1	1	10	1	82.47		
+2	2	10	2	56.2		
+3	3	6	2	0.14		
+4	4	8	2	63.07		
+5	5	9	1	56.11		
+6	6	3	2	1.05		
+7	7	8	1	80.29		
+8	8	9	2	86.67		
+9	9	6	2	10.08		
+10	10	5	1	24.79		
+11	11	3	1	22.62		
+12	12	9	2	70.89		
+13	13	3	2	96.28		
+14	14	6	2	41.76		
+15	15	1	1	70.04		
+16	16	3	2	83.06		
+17	17	7	1	70.62		
+18	18	10	1	37.96		
+19	19	7	1	34.85		
+20	20	2	1	48.5		
